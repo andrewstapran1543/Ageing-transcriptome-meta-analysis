@@ -39,8 +39,6 @@ This text prepared by [Team member 1](https://linktoyourprofile/scholar/or/linke
 ## References
 
 ```{bibliography}
-:style: plain
-:filter: docname in docnames
 Palmer, Daniel et al. “Ageing transcriptome meta-analysis reveals similarities and differences between key mammalian tissues.” Aging vol. 13,3 (2021): 3313-3341. doi:10.18632/aging.202648 [Full text link](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7906136/#SD2)
 ```
 Footer
