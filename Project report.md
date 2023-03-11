@@ -7,7 +7,7 @@ style blocks from [jupyter_book](https://jupyterbook.org/en/stable/intro.html) A
 
 ## Introduction
 
-In this project, we reproduce the results of a meta-analysis of gene expression in mice reported by Palmer, Daniel et al. in 2021.
+In this project, we reproduce the results of a meta-analysis of gene expression in mice reported by Palmer, Daniel et al. in 2021 [Full text link](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7906136/#SD2).
 Our task was to correctly preprocess the gene expression data from their article and apply the meta-analysis technique to the datasets in order to understand which genes are differentially expressed with age. Our hypothesis was ...
 
 Create a separate bibtex file (`.bib` extension) to store the references. Any bibtex reference can be obtained from google scholar by clicking on `cite` button and choosing `bibtex` option. Use the following directive to cite something inside the text of your report {cite}`bibtex_citekey`. A useful bibtex guide is here [guide](https://www.bibtex.com/g/bibtex-format/).
@@ -39,7 +39,7 @@ This text prepared by [Team member 1](https://linktoyourprofile/scholar/or/linke
 ## References
 
 ```{bibliography}
-Palmer, Daniel et al. “Ageing transcriptome meta-analysis reveals similarities and differences between key mammalian tissues.” Aging vol. 13,3 (2021): 3313-3341. doi:10.18632/aging.202648 [Full text link](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7906136/#SD2)
+Palmer, Daniel et al. “Ageing transcriptome meta-analysis reveals similarities and differences between key mammalian tissues.” Aging vol. 13,3 (2021): 3313-3341. doi:10.18632/aging.202648
 ```
 Footer
 © 2023 GitHub, Inc.
