@@ -4,6 +4,15 @@ Here will be text, references and pictures demonstrating the logic of our resear
 
 style blocks from [jupyter_book](https://jupyterbook.org/en/stable/intro.html) API for making the report more beautiful.
 
+**!!!!!!!!!!!Our Project tasks/questions:**
+1) Reproduce the results of the paper. Try to use a maximum of python for conducting meta-analysis. PyMare package can help you.
+2) Describe some weak points of the paper (if any).
+3) Could you suggest improvements to the approach?
+4) Obtain a list of differentially expressed genes across aging. Intersect them with GenAge database. Describe some of these genes.
+5) Conduct enrichment analysis.
+6) Explain the ML approach used in the paper.
+
+
 
 ## Introduction
 
