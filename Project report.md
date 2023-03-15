@@ -19,7 +19,7 @@ From the data avaliable on the [github repository](https://github.com/maglab/Age
 
 To estimate differencially expressed genes (DEGs) we conducted linear regression analysis for all the datasets. The regression equation:
 
-$$Y_{ij} = \beta_{0j} + \bets_{1j}Age{i} + \epsilon_{ij}$$
+$$Y_{ij} = \beta_{0j} + \beta_{1j}Age{i} + \epsilon_{ij}$$
 
 The slope of this regression identifies the coefficient of differencial expression. F test with 0.05 cutoff was then used to identify the significance of the coefficients. 
 
@@ -68,7 +68,8 @@ selected funct categories that predict best if the gene is diff expressed.
 
 ## Credits
 This text prepared by [Daria Kozhevnikova](https://linktoyourprofile/scholar/or/linkedin.com) 
-The Jupiter Notebook for the data analysis prepared by ...
+
+The Jupiter Notebook for the data analysis prepared by Andrey Stapran
 
 ## References
 
