@@ -18,9 +18,14 @@ style blocks from [jupyter_book](https://jupyterbook.org/en/stable/intro.html) A
 
 ## Introduction
 
-In this project, we reproduce the results of a meta-analysis of gene expression in mice reported by Palmer, Daniel et al. in 2021  {cite}`palmer2021ageing` [Full text link](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7906136/#SD2). In this study transcriptome signatures of ageing were derived from 127 public microarray and RNA-Seq datasets from mice, rats, and humans. 
+In this project, we reproduce the results of a meta-analysis of gene expression in mice reported by Palmer, Daniel et al. in 2021 {cite}`palmer2021ageing` [Full text link](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7906136/#SD2). In this study transcriptome signatures of ageing were derived from 127 public microarray and RNA-Seq datasets from mice, rats, and humans. 
 
 Create a separate bibtex file (`.bib` extension) to store the references. Any bibtex reference can be obtained from google scholar by clicking on `cite` button and choosing `bibtex` option. Use the following directive to cite something inside the text of your report {cite}`bibtex_citekey`. A useful bibtex guide is here [guide](https://www.bibtex.com/g/bibtex-format/).
+
+ML: list of GO terms that are enriched   build decision tree plot to understand wheather - enrichment term on each node of the tree (does the gene belong 
+des tree for each gene based on the functional categories - decides if the gene are dif expressed
+selected funct categories that predict best if the gene is diff expressed.
+
 
 
 ## Results
@@ -79,6 +84,17 @@ This text prepared by [Team member 1](https://linktoyourprofile/scholar/or/linke
 ```{bibliography}
 Palmer, Daniel et al. “Ageing transcriptome meta-analysis reveals similarities and differences between key mammalian tissues.” Aging vol. 13,3 (2021): 3313-3341. doi:10.18632/aging.202648
 ```
+@article{palmer2021ageing,
+  title={Ageing transcriptome meta-analysis reveals similarities and differences between key mammalian tissues},
+  author={Palmer, Daniel and Fabris, Fabio and Doherty, Aoife and Freitas, Alex A and de Magalh{\~a}es, Jo{\~a}o Pedro},
+  journal={Aging (Albany NY)},
+  volume={13},
+  number={3},
+  pages={3313},
+  year={2021},
+  publisher={Impact Journals, LLC}
+}
+
 Footer
 © 2023 GitHub, Inc.
 Footer navigation
@@ -93,17 +109,3 @@ API
 Training
 Blog
 About
-
-
-
-## Introduction
-
-In this project, we reproduce the results of a meta-analysis of gene expression in mice reported by Palmer, Daniel et al. in 2021 {cite}`palmer2021ageing` [Full text link](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7906136/#SD2). In this study transcriptome signatures of ageing were derived from 127 public microarray and RNA-Seq datasets from mice, rats, and humans. 
-
-Create a separate bibtex file (`.bib` extension) to store the references. Any bibtex reference can be obtained from google scholar by clicking on `cite` button and choosing `bibtex` option. Use the following directive to cite something inside the text of your report {cite}`bibtex_citekey`. A useful bibtex guide is here [guide](https://www.bibtex.com/g/bibtex-format/).
-
-ML: list of GO terms that are enriched   build decision tree plot to understand wheather - enrichment term on each node of the tree (does the gene belong 
-des tree for each gene based on the functional categories - decides if the gene are dif expressed
-selected funct categories that predict best if the gene is diff expressed.
-
-
