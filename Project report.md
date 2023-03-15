@@ -4,56 +4,35 @@ Here will be text, references and pictures demonstrating the logic of our resear
 
 style blocks from [jupyter_book](https://jupyterbook.org/en/stable/intro.html) API for making the report more beautiful.
 
-**!!!!!!!!!!!Our Project tasks/questions:**
-1) Reproduce the results of the paper. Try to use a maximum of python for conducting meta-analysis. PyMare package can help you.
-2) Describe some weak points of the paper (if any).
-3) Could you suggest improvements to the approach?
-4) Obtain a list of differentially expressed genes across aging. Intersect them with GenAge database. Describe some of these genes.
-5) Conduct enrichment analysis.
-6) Explain the ML approach used in the paper.
-
 
 ## Introduction
 
 Use the following directive to cite something inside the text of your report \cite{bibtex_citekey}. A useful bibtex guide is here [guide](https://www.bibtex.com/g/bibtex-format/). - ????
 
-In this project, we reproduce the results of a meta-analysis of gene expression in mice reported by Palmer, Daniel et al. in 2021  [palmer2021ageing](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7906136/#SD2). In this study transcriptome signatures of ageing were derived from 127 public microarray and RNA-Seq datasets from mice, rats, and humans. Gene expression patterns revealed overexpression of immune and stress response genes with age, as well as underexpression of metabolic and developmental genes. It was indicated that gene ageing signatures are associated with key genes in protein interaction networks. Previously in thr paper [de2009meta](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2732303/) several common signatures of aging were highlighted including overexpression of inflammation, immune response and lysosomes related genes, underexpression of collagen, energy metabolism and MT genes, as well as alterations in expression of apoptosis genes. The reasoning that genes that display differential expression with age are mainly common for different tissues was confirmed.  
-
-ML: list of GO terms that are enriched   build decision tree plot to understand wheather - enrichment term on each node of the tree (does the gene belong 
-des tree for each gene based on the functional categories - decides if the gene are dif expressed
-selected funct categories that predict best if the gene is diff expressed.
-
-
+In this project, we reproduce the results of a meta-analysis of gene expression in mice reported by Palmer, Daniel et al. in 2021  [palmer2021ageing](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7906136/#SD2). In this study transcriptome signatures of ageing in brain, heart and muscle were derived from 127 public microarray and RNA-Seq datasets from mice, rats, and humans. Gene expression patterns revealed overexpression of immune and stress response genes with age, as well as underexpression of metabolic and developmental genes. It was indicated that gene ageing signatures are associated with key genes in protein interaction networks. Previously in thr paper [de2009meta](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2732303/) several common signatures of aging were highlighted including overexpression of inflammation, immune response and lysosomes related genes, underexpression of collagen, energy metabolism and MT genes, as well as alterations in expression of apoptosis genes. The reasoning that genes that display differential expression with age are mainly common for different tissues was confirmed.  
 
 ## Results
 
 #### Preprocessing of the gene expression data
 
-20 datasets from microarrays brain musce and heard 
+From the data avaliable on the [github repository](https://github.com/maglab/AgeingSignatures2020_supplementary) we selected 20 mice microarray datasets originated from brain, heart and muscle. Each dataset contains expression levels of around 20000 genes from several samples.
 
-in each dataset we have expression of 20000 genes
+To estimate differencially expressed genes (DEGs) we conducted linear regression analysis for all the datasets. The regression equation:
 
-To estimate differencially expressied genes we build linear regression analysis for all the datasets, the slope of the regression indentifies the coefficien of diff expression. Significance of the dif expr was identified with F test with 0.05 cutoff. 
+$$Y_{ij} = \beta_{0j} + \bets_{1j}Age{i} + \epsilon_{ij}$$
 
-Cumulative binomial test - to identify genes signif dif expressed across the datasets. 
+The slope of this regression identifies the coefficient of differencial expression. F test with 0.05 cutoff was then used to identify the significance of the coefficients. 
 
-mets-regression???
+To further identify the genes with significant changes in expression across the datasets cumulative binomial test was applied. 
+
+meta-regression???
 
 #### Meta-analysis of the datasets
 
-Global analysis 
-Separately for each tissue 
+Firstly the global metaanalysis was conducted to identify DEGs across all tissues. For that the datasets with genes regression data were processed with the **PyMare** package.
 
-Regression analysis for each gene - (?) PyMare package - conducts metaanalysis on the results of regression analysis 
+Next, the same analysis was conducted separately for each tissue. 
 
-
-The output: list of genes dif expressed across all datasets
-
-This section is for presenting and describing out results. Put pictures, text, references, formulae and all that you need here. You are free to put code here also but it is quite redundant because you are also preparing the notebook with code and comments. 
-
-Put mathematical formulae in the report if needed. Use, for example, the following directive for that
-
-$$ y = wx + b$$
 
 Put figures in your report. If some of the pictures were produced with python code, save them in a separate folder within the folder of your project. Use the following directive to put a figure inside the text:
 
@@ -69,9 +48,23 @@ Use the following directive to refer to a particular picture in the text {numref
 
 ## Discussion
 
+Discuss your results here and answer additional questions from questions/tasks section of **project proposal**. 
+
+**!!!!!!!!!!!Our Project tasks/questions:**
+1) Reproduce the results of the paper. Try to use a maximum of python for conducting meta-analysis. PyMare package can help you.
+2) Describe some weak points of the paper (if any).
+3) Could you suggest improvements to the approach?
+4) Obtain a list of differentially expressed genes across aging. Intersect them with GenAge database. Describe some of these genes.
+5) Conduct enrichment analysis.
+6) Explain the ML approach used in the paper.
+
 #### The genes differentially expressed with age
 
-Discuss your results here and answer additional questions from questions/tasks section of **project proposal**. 
+#### Machine learning approach used in the paper `palmer2021ageing`
+ML: list of GO terms that are enriched   build decision tree plot to understand wheather - enrichment term on each node of the tree (does the gene belong 
+des tree for each gene based on the functional categories - decides if the gene are dif expressed
+selected funct categories that predict best if the gene is diff expressed.
+
 
 ## Credits
 This text prepared by [Daria Kozhevnikova](https://linktoyourprofile/scholar/or/linkedin.com) 
