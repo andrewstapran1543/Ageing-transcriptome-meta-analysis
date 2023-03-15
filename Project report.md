@@ -12,16 +12,12 @@ style blocks from [jupyter_book](https://jupyterbook.org/en/stable/intro.html) A
 5) Conduct enrichment analysis.
 6) Explain the ML approach used in the paper.
 
-$ perl apply_references.pl References.bib Project report.md
-
-
 
 ## Introduction
 
 Use the following directive to cite something inside the text of your report \cite{bibtex_citekey}. A useful bibtex guide is here [guide](https://www.bibtex.com/g/bibtex-format/). - ????
 
-In this project, we reproduce the results of a meta-analysis of gene expression in mice reported by Palmer, Daniel et al. in 2021  [palmer2021ageing](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7906136/#SD2). In this study transcriptome signatures of ageing in brain, heart and muscle were derived from 127 public microarray and RNA-Seq datasets from mice, rats, and humans. 
-The methodology of ... ...  [de2009meta](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2732303/). 
+In this project, we reproduce the results of a meta-analysis of gene expression in mice reported by Palmer, Daniel et al. in 2021  [palmer2021ageing](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7906136/#SD2). In this study transcriptome signatures of ageing were derived from 127 public microarray and RNA-Seq datasets from mice, rats, and humans. Gene expression patterns revealed overexpression of immune and stress response genes with age, as well as underexpression of metabolic and developmental genes. It was indicated that gene ageing signatures are associated with key genes in protein interaction networks. In thr paper [](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2732303/)
 
 ML: list of GO terms that are enriched   build decision tree plot to understand wheather - enrichment term on each node of the tree (does the gene belong 
 des tree for each gene based on the functional categories - decides if the gene are dif expressed
@@ -50,12 +46,14 @@ Separately for each tissue
 
 Regression analysis for each gene - (?) PyMare package - conducts metaanalysis on the results of regression analysis 
 
-$$ Y_{ij} = \beta_{0j} + \beta_{1j}Age_i + \epsilon_{ij}$$
-
 
 The output: list of genes dif expressed across all datasets
 
 This section is for presenting and describing out results. Put pictures, text, references, formulae and all that you need here. You are free to put code here also but it is quite redundant because you are also preparing the notebook with code and comments. 
+
+Put mathematical formulae in the report if needed. Use, for example, the following directive for that
+
+$$ y = wx + b$$
 
 Put figures in your report. If some of the pictures were produced with python code, save them in a separate folder within the folder of your project. Use the following directive to put a figure inside the text:
 
@@ -77,7 +75,7 @@ Discuss your results here and answer additional questions from questions/tasks s
 
 ## Credits
 This text prepared by [Daria Kozhevnikova](https://linktoyourprofile/scholar/or/linkedin.com) 
-The Jupiter Notebook for the data analysis prepared by Andrey Stapran
+The Jupiter Notebook for the data analysis prepared by ...
 
 ## References
 
