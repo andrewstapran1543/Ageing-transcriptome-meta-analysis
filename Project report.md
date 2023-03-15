@@ -20,7 +20,7 @@ style blocks from [jupyter_book](https://jupyterbook.org/en/stable/intro.html) A
 
 In this project, we reproduce the results of a meta-analysis of gene expression in mice reported by Palmer, Daniel et al. in 2021 {cite}`palmer2021ageing` [palmer2021ageing](https://github.com/d-kozhevnikova/Ageing-transcriptome-meta-analysis/blob/main/CITATION.cff) [Full text link](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7906136/#SD2). In this study transcriptome signatures of ageing were derived from 127 public microarray and RNA-Seq datasets from mice, rats, and humans. 
 
-Create a separate bibtex file (`.bib` extension) to store the references. Any bibtex reference can be obtained from google scholar by clicking on `cite` button and choosing `bibtex` option. Use the following directive to cite something inside the text of your report {cite}`bibtex_citekey`. A useful bibtex guide is here [guide](https://www.bibtex.com/g/bibtex-format/).
+Create a separate bibtex file (`.bib` extension) to store the references. Any bibtex reference can be obtained from google scholar by clicking on `cite` button and choosing `bibtex` option. Use the following directive to cite something inside the text of your report \cite{bibtex_citekey}. A useful bibtex guide is here [guide](https://www.bibtex.com/g/bibtex-format/).
 
 ML: list of GO terms that are enriched   build decision tree plot to understand wheather - enrichment term on each node of the tree (does the gene belong 
 des tree for each gene based on the functional categories - decides if the gene are dif expressed
