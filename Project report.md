@@ -12,7 +12,7 @@ style blocks from [jupyter_book](https://jupyterbook.org/en/stable/intro.html) A
 5) Conduct enrichment analysis.
 6) Explain the ML approach used in the paper.
 
-
+$ perl apply_references.pl References.bib Project report.md
 
 
 
